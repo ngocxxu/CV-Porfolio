@@ -1,0 +1,73 @@
+.vertical-axis:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #fbbe2465;
+  left: 30%;
+  top: 3%;
+}
+.vertical-axis:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  border: 2px solid #fbbf24;
+  background-color: #1f2937;
+  left: 30%;
+  top: 5%;
+  margin-left: 4px;
+}
+.vertical-axis-2:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #fbbe2465;
+  left: 30%;
+  top: 28%;
+}
+.vertical-axis-2:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  border: 2px solid #fbbf24;
+  background-color: #1f2937;
+  left: 30%;
+  top: 32%;
+  margin-left: 4px;
+}
+.vertical-axis-3:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #fbbe2465;
+  left: 30%;
+  top: 20%;
+}
+.vertical-axis-3:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  border: 2px solid #fbbf24;
+  background-color: #1f2937;
+  left: 30%;
+  top: 22.5%;
+  margin-left: 4px;
+}
+
+.education-left {
+  width: 30%;
+}
+.education-right {
+  width: 70%;
+}
