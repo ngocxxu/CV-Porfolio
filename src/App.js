@@ -8,6 +8,7 @@ import Resume from './pages/Resume'
 import Blog from './pages/Blog'
 import Contact from './pages/Contact'
 import Porfolio from './pages/Porfolio';
+import Menu from './components/Menu';
 
 export const history = createBrowserHistory();
 
@@ -18,9 +19,10 @@ function App() {
         <UserTemplate path='/home' exact Component={Home}></UserTemplate>
         <UserTemplate path='/aboutme' exact Component={AboutMe}></UserTemplate>
         <UserTemplate path='/resume' exact Component={Resume}></UserTemplate>
-        <UserTemplate path='/portfolio' exact Component={Porfolio}></UserTemplate>
+        <UserTemplate path='/porfolio' exact Component={Porfolio}></UserTemplate>
         <UserTemplate path='/blog' exact Component={Blog}></UserTemplate>
         <UserTemplate path='/contact' exact Component={Contact}></UserTemplate>
+        <Menu></Menu>
       </Switch>
     </Router>
   );

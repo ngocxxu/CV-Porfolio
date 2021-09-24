@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { Route } from "react-router";
+import Header from "../components/Header";
 import Menu from "../components/Menu";
 
 export default function UserTemplate(props) {
@@ -11,12 +12,10 @@ export default function UserTemplate(props) {
       render={(propsRoute) => {
         return (
           <Fragment>
-            <div className="lg:flex">
-              <div className="lg:flex">
-                <Menu>123</Menu>
-                <div>Ngoc</div>
-              </div>
-              <div>
+            <div className="lg:flex min-h-screen bg-gray-800">
+              <div className="lg:flex w-full">
+                <Menu></Menu>
+                <Header></Header>
                 <Component {...propsRoute}></Component>
               </div>
             </div>
