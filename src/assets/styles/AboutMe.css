@@ -1,0 +1,18 @@
+
+/* hide disabled buttons */
+.rec.rec-dot {
+  visibility: hidden;
+}
+
+
+/* hide disabled buttons */
+.rec.rec-arrow {
+  background-color: transparent;
+}
+/* hide disabled buttons */
+.rec.rec-arrow.rec-arrow-left:hover {
+  background-color: transparent;
+}
+.rec.rec-arrow.rec-arrow-right:hover {
+  background-color: transparent;
+}

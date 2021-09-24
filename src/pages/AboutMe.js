@@ -1,12 +1,15 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
-import Item from "react-elastic-carousel";
+import '../assets/styles/AboutMe.css'
 import { ReactComponent as Adaptation } from "../assets/svg/adaptation.svg";
 import { ReactComponent as Administration } from "../assets/svg/administration.svg";
 import { ReactComponent as Creation } from "../assets/svg/creation.svg";
 import { ReactComponent as Code } from "../assets/svg/programming-code-signs.svg";
 import { ReactComponent as QuoteLeft } from "../assets/svg/left-quote.svg";
 import { ReactComponent as QuoteRight } from "../assets/svg/right-quote-sign.svg";
+import { ReactComponent as Clock } from "../assets/svg/alarm-clock.svg";
+import { ReactComponent as Happy } from "../assets/svg/happy.svg";
+import { ReactComponent as Shuttle } from "../assets/svg/shuttle.svg";
 
 export default function AboutMe(props) {
   return (
@@ -118,8 +121,8 @@ export default function AboutMe(props) {
         Inspirational
         <span className="text-yellow-400"> Quotes</span>
       </div>
-      <div>
-        <Carousel  itemsToScroll={2} itemsToShow={2}>
+      <div className="" style={{cursor: 'grab'}}>
+        <Carousel itemsToScroll={2} itemsToShow={2}>
           <item>
             <div className="border-gray-300 border-2 m-3 p-6 rounded-2xl">
               <QuoteLeft height={30} width={30} fill="#FBBF24"></QuoteLeft>
@@ -190,6 +193,28 @@ export default function AboutMe(props) {
           </item>
         </Carousel>
       </div>
+      <div className="text-2xl font-semibold mt-6 mb-8">
+        Fun
+        <span className="text-yellow-400"> Facts</span>
+      </div>
+      <div className="flex space-x-8">
+        <div className="bg-gray-700 text-center w-full rounded-xl border-gray-600 border-2 p-7">
+          <Happy className="mx-auto" fill="#FBBF24" width={30} height={30}></Happy>
+          <p className='text-gray-100 my-3 font-medium'>Happy Index</p>
+          <p className='text-gray-300 text-4xl'>100</p>
+        </div>
+        <div className="bg-gray-700 text-center w-full rounded-xl border-gray-600 border-2 p-7">
+          <Clock className="mx-auto" fill="#FBBF24" width={30} height={30}></Clock>
+          <p className='text-gray-100 my-3 font-medium'>Working Hours</p>
+          <p className='text-gray-300 text-4xl'>720</p>
+        </div>
+        <div className="bg-gray-700 text-center w-full rounded-xl border-gray-600 border-2 p-7">
+          <Shuttle className="mx-auto" fill="#FBBF24" width={30} height={30}></Shuttle>
+          <p className='text-gray-100 my-3 font-medium'>Overcome Index</p>
+          <p className='text-gray-300 text-4xl'>200</p>
+        </div>
+      </div>
+
     </div>
   );
 }
