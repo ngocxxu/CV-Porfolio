@@ -274,7 +274,7 @@ export default function Resume(props) {
             Certificates
           </span>
         </div>
-        <div className="flex mt-8 ">
+        <div className="flex mt-8 lg:pb-0 pb-6">
           <div className="flex border-gray-500 border-2 lg:w-1/3 rounded-xl lg:mx-0 mx-auto">
             <div className="flex justify-center items-center border-gray-500 border-r-2 py-6 px-10 bg-gray-700 rounded-l-xl">
               <Badge width={40} height={40} fill="#D1D5DB"></Badge>

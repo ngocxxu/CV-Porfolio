@@ -198,7 +198,7 @@ export default function AboutMe(props) {
         Fun
         <span className="text-yellow-400"> Facts</span>
       </div>
-      <div className="lg:flex lg:space-x-8 lg:space-y-0 space-y-6 m-6 lg:m-0">
+      <div className="lg:flex lg:space-x-8 lg:space-y-0 space-y-6 m-6 lg:m-0 lg:pb-0 pb-6">
         <div className="bg-gray-700 text-center w-full rounded-xl border-gray-600 border-2 p-7">
           <Happy
             className="mx-auto"

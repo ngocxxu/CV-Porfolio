@@ -50,7 +50,7 @@ export default function Porfolio(props) {
         </NavLink>
       </div>
 
-      <div className="lg:flex">
+      <div className="lg:flex lg:pb-0 pb-1">
         <div className="lg:grid grid-cols-3 gap-3 justify-center ">
           <div className="max-w-sm rounded overflow-hidden shadow-lg bg-gray-100 transition duration-500 ease-in-out transform hover:-translate-y-1 m-4">
             <img className="w-full" src={democinema} alt="democinema" />
