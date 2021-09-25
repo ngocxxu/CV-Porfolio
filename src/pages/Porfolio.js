@@ -19,19 +19,19 @@ import { NavLink } from "react-router-dom";
 
 export default function Porfolio(props) {
   return (
-    <div className="w-full text-gray-100 lg:p-14">
+    <div className="w-full text-gray-100 lg:p-14 bg-gray-800 animate__animated animate__fadeIn">
       <div className="flex">
         <div className="text-3xl font-semibold mr-3 mt-2">Portfolio</div>
         <Portfolio fill="#FBBF24" width={40} height={40}></Portfolio>
       </div>
       <div className="my-4 space-x-5">
-      <NavLink to='/porfolio' activeClassName="text-yellow-300" className="cursor-pointer text-gray-400 hover:text-gray-300">
+      <NavLink to='/porfolio' activeClassName="text-yellow-300" className="cursor-pointer text-gray-400 hover:text-yellow-300">
           All
         </NavLink>
-        <NavLink to='/porfolio/designproject'  className="cursor-pointer text-gray-400 hover:text-gray-300">
+        <NavLink to='/porfolio/designproject'  className="cursor-pointer text-gray-400 hover:text-yellow-300">
           Design Project
         </NavLink>
-        <NavLink to='/porfolio/codingproject'  className="cursor-pointer text-gray-400 hover:text-gray-300">
+        <NavLink to='/porfolio/codingproject'  className="cursor-pointer text-gray-400 hover:text-yellow-300">
           Coding Project
         </NavLink>
       </div>
@@ -50,10 +50,10 @@ export default function Porfolio(props) {
               </p>
               <div className="flex justify-between space-x-2 mt-6">
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-1/2 transition duration-500 ease-in-out">
-                  <a href="https://github.com/ngocxxu/Cinema-Project">Github</a>
+                  <a className="text-gray-100 hover:text-gray-100" href="https://github.com/ngocxxu/Cinema-Project">Github</a>
                 </button>
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-1/2 transition duration-500 ease-in-out">
-                  <a href="https://zupi-cinema-project.web.app/">Demo</a>
+                  <a className="text-gray-100 hover:text-gray-100" href="https://zupi-cinema-project.web.app/">Demo</a>
                 </button>
               </div>
             </div>
@@ -82,10 +82,10 @@ export default function Porfolio(props) {
               </p>
               <div className="flex justify-between space-x-2 mt-6">
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-1/2 transition duration-500 ease-in-out">
-                  <a href="https://github.com/ngocxxu/JIRA_PROJECT">Github</a>
+                  <a className='text-gray-100 hover:text-gray-100' href="https://github.com/ngocxxu/JIRA_PROJECT">Github</a>
                 </button>
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-1/2 transition duration-500 ease-in-out">
-                  <a href="https://zupi-jira-project.web.app/">Demo</a>
+                  <a className='text-gray-100 hover:text-gray-100' href="https://zupi-jira-project.web.app/">Demo</a>
                 </button>
               </div>
             </div>
@@ -114,10 +114,10 @@ export default function Porfolio(props) {
               </p>
               <div className="flex justify-between space-x-2 mt-6">
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-1/2 transition duration-500 ease-in-out">
-                  <a href="https://github.com/ngocxxu/CV-Porfolio">Github</a>
+                  <a className='text-gray-100 hover:text-gray-100' href="https://github.com/ngocxxu/CV-Porfolio">Github</a>
                 </button>
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-1/2 transition duration-500 ease-in-out">
-                  <a href="https://zupi-cinema-project.web.app/">Demo</a>
+                  <a className='text-gray-100 hover:text-gray-100' href="https://zupi-cinema-project.web.app/">Demo</a>
                 </button>
               </div>
             </div>
@@ -146,12 +146,12 @@ export default function Porfolio(props) {
               </p>
               <div className="flex justify-between space-x-2 mt-6">
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-1/2 transition duration-500 ease-in-out">
-                  <a href="https://github.com/ngocxxu/ReactJS-Excersice">
+                  <a className='text-gray-100 hover:text-gray-100' href="https://github.com/ngocxxu/ReactJS-Excersice">
                     Github
                   </a>
                 </button>
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-1/2 transition duration-500 ease-in-out">
-                  <a href="https://todolist-bono.netlify.app/">Demo</a>
+                  <a className='text-gray-100 hover:text-gray-100' href="https://todolist-bono.netlify.app/">Demo</a>
                 </button>
               </div>
             </div>
@@ -180,12 +180,12 @@ export default function Porfolio(props) {
               </p>
               <div className="flex justify-between space-x-2 mt-6">
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-1/2 transition duration-500 ease-in-out">
-                  <a href="https://github.com/ngocxxu/BC08E-TaiXiu-Bono">
+                  <a className='text-gray-100 hover:text-gray-100' href="https://github.com/ngocxxu/BC08E-TaiXiu-Bono">
                     Github
                   </a>
                 </button>
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-1/2 transition duration-500 ease-in-out">
-                  <a href="https://taixiucovid.netlify.app/">Demo</a>
+                  <a className='text-gray-100 hover:text-gray-100' href="https://taixiucovid.netlify.app/">Demo</a>
                 </button>
               </div>
             </div>
@@ -214,12 +214,12 @@ export default function Porfolio(props) {
               </p>
               <div className="flex justify-between space-x-2 mt-6">
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-1/2 transition duration-500 ease-in-out">
-                  <a href="https://github.com/ngocxxu/BC08E-OanTuTi-BaoNgoc">
+                  <a className='text-gray-100 hover:text-gray-100' href="https://github.com/ngocxxu/BC08E-OanTuTi-BaoNgoc">
                     Github
                   </a>
                 </button>
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-1/2 transition duration-500 ease-in-out">
-                  <a href="https://oantuticovid.netlify.app/">Demo</a>
+                  <a className='text-gray-100 hover:text-gray-100' href="https://oantuticovid.netlify.app/">Demo</a>
                 </button>
               </div>
             </div>
@@ -248,10 +248,10 @@ export default function Porfolio(props) {
               </p>
               <div className="flex justify-between space-x-2 mt-6">
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-1/2 transition duration-500 ease-in-out">
-                  <a href="https://github.com/ngocxxu/Industry-PJ">Github</a>
+                  <a className='text-gray-100 hover:text-gray-100' href="https://github.com/ngocxxu/Industry-PJ">Github</a>
                 </button>
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-1/2 transition duration-500 ease-in-out">
-                  <a href="http://industry-world.surge.sh/">Demo</a>
+                  <a className='text-gray-100 hover:text-gray-100' href="http://industry-world.surge.sh/">Demo</a>
                 </button>
               </div>
             </div>
@@ -280,10 +280,10 @@ export default function Porfolio(props) {
               </p>
               <div className="flex justify-between space-x-2 mt-6">
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-1/2 transition duration-500 ease-in-out">
-                  <a href="https://github.com/ngocxxu/Farm-Web">Github</a>
+                  <a className='text-gray-100 hover:text-gray-100' href="https://github.com/ngocxxu/Farm-Web">Github</a>
                 </button>
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-1/2 transition duration-500 ease-in-out">
-                  <a href="https://farm-bono.netlify.app/">Demo</a>
+                  <a className='text-gray-100 hover:text-gray-100' href="https://farm-bono.netlify.app/">Demo</a>
                 </button>
               </div>
             </div>
@@ -312,12 +312,12 @@ export default function Porfolio(props) {
               </p>
               <div className="flex justify-between space-x-2 mt-6">
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-1/2 transition duration-500 ease-in-out">
-                  <a href="https://github.com/ngocxxu/project-Corp-Web">
+                  <a className='text-gray-100 hover:text-gray-100' href="https://github.com/ngocxxu/project-Corp-Web">
                     Github
                   </a>
                 </button>
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-1/2 transition duration-500 ease-in-out">
-                  <a href="https://corp-bono.netlify.app/">Demo</a>
+                  <a className='text-gray-100 hover:text-gray-100' href="https://corp-bono.netlify.app/">Demo</a>
                 </button>
               </div>
             </div>
@@ -346,7 +346,7 @@ export default function Porfolio(props) {
               </p>
               <div className="flex justify-between space-x-2 mt-6">
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-full transition duration-500 ease-in-out">
-                  <a href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
+                  <a className='text-gray-100 hover:text-gray-100' href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
                 </button>
               </div>
             </div>
@@ -375,7 +375,7 @@ export default function Porfolio(props) {
               </p>
               <div className="flex justify-between space-x-2 mt-6">
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-full transition duration-500 ease-in-out">
-                  <a href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
+                  <a className='text-gray-100 hover:text-gray-100' href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
                 </button>
               </div>
             </div>
@@ -404,7 +404,7 @@ export default function Porfolio(props) {
               </p>
               <div className="flex justify-between space-x-2 mt-6">
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-full transition duration-500 ease-in-out">
-                  <a href="https://www.figma.com/file/Gc6fEczJDy8ZoOw0z53zEE/Zupi-Paracord?node-id=0%3A1">Demo</a>
+                  <a className='text-gray-100 hover:text-gray-100' href="https://www.figma.com/file/Gc6fEczJDy8ZoOw0z53zEE/Zupi-Paracord?node-id=0%3A1">Demo</a>
                 </button>
               </div>
             </div>
@@ -433,7 +433,7 @@ export default function Porfolio(props) {
               </p>
               <div className="flex justify-between space-x-2 mt-6">
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-full transition duration-500 ease-in-out">
-                  <a href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
+                  <a className='text-gray-100 hover:text-gray-100' href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
                 </button>
               </div>
             </div>
@@ -462,7 +462,7 @@ export default function Porfolio(props) {
               </p>
               <div className="flex justify-between space-x-2 mt-6">
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-full transition duration-500 ease-in-out">
-                  <a href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
+                  <a className='text-gray-100 hover:text-gray-100' href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
                 </button>
               </div>
             </div>
@@ -491,7 +491,7 @@ export default function Porfolio(props) {
               </p>
               <div className="flex justify-between space-x-2 mt-6">
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-full transition duration-500 ease-in-out">
-                  <a href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
+                  <a className='text-gray-100 hover:text-gray-100' href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
                 </button>
               </div>
             </div>

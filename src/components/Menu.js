@@ -9,10 +9,10 @@ import { ReactComponent as User } from "../assets/svg/user.svg";
 
 export default function Menu(props) {
   return (
-    <div className='h-full'>
-      <ul className="bg-gray-800 text-xs text-gray-100">
+    <div className='h-full bg-gray-800'>
+      <ul className="text-xs text-gray-100">
         <li className="flex flex-col items-center border-b border-gray-500 p-4">
-          <NavLink className="mt-2 text-gray-100" activeClassName="text-yellow-400" to="/home">
+          <NavLink className="mt-2 text-gray-100 hover:text-yellow-400" activeClassName="text-yellow-400" to="/home">
             <Home
               className="mx-auto "
               fill="#9CA3AF"
@@ -23,7 +23,7 @@ export default function Menu(props) {
           </NavLink>
         </li>
         <li className="flex flex-col items-center border-b border-gray-500 p-4">
-          <NavLink className="mt-2 text-gray-100" activeClassName="text-yellow-400" to="/aboutme">
+          <NavLink className="mt-2 text-gray-100 hover:text-yellow-400" activeClassName="text-yellow-400" to="/aboutme">
             <User
               className="mx-auto "
               fill="#9CA3AF"
@@ -34,7 +34,7 @@ export default function Menu(props) {
           </NavLink>
         </li>
         <li className="flex flex-col items-center border-b border-gray-500 p-4">
-          <NavLink className="mt-2 text-gray-100" activeClassName="text-yellow-400" to="/resume">
+          <NavLink className="mt-2 text-gray-100 hover:text-yellow-400" activeClassName="text-yellow-400" to="/resume">
             <GraduationCap
               className="mx-auto "
               fill="#9CA3AF"
@@ -45,7 +45,7 @@ export default function Menu(props) {
           </NavLink>
         </li>
         <li className="flex flex-col items-center border-b border-gray-500 p-4">
-          <NavLink className="mt-2 text-gray-100" activeClassName="text-yellow-400" to="/porfolio">
+          <NavLink className="mt-2 text-gray-100 hover:text-yellow-400" activeClassName="text-yellow-400" to="/porfolio">
             <Briefcase
               className="mx-auto "
               fill="#9CA3AF"
@@ -67,7 +67,7 @@ export default function Menu(props) {
           </NavLink>
         </li> */}
         <li className="flex flex-col items-center border-b border-gray-500 p-4">
-          <NavLink className="mt-2 text-gray-100" activeClassName="text-yellow-400" to="/contact">
+          <NavLink className="mt-2 text-gray-100 hover:text-yellow-400" activeClassName="text-yellow-400" to="/contact">
             <PaperPlane
               className="mx-auto "
               fill="#9CA3AF"

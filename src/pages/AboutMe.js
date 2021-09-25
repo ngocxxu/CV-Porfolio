@@ -13,7 +13,7 @@ import { ReactComponent as Shuttle } from "../assets/svg/shuttle.svg";
 
 export default function AboutMe(props) {
   return (
-    <div className="w-full text-gray-100 lg:p-14">
+    <div className="w-full bg-gray-800 text-gray-100 lg:p-14 animate__animated animate__fadeInUp">
       <div className="text-3xl font-semibold ">
         About
         <span className="text-yellow-400"> Me</span>
@@ -132,9 +132,9 @@ export default function AboutMe(props) {
                 nibh. Ut non sodales.
               </p>
               <div className="flex justify-between">
-              <div>
+              <div className=''>
                 <p className='text-gray-100 text-md '>Julia Hickman</p>
-                <p className='text-gray-300 text-xs'>Omni Source</p>
+                <p className='text-gray-300 text-xs mb-0'>Omni Source</p>
               </div>
               <QuoteRight height={30} width={30} fill="#FBBF24"></QuoteRight>
               </div>
@@ -151,7 +151,7 @@ export default function AboutMe(props) {
               <div className="flex justify-between">
               <div>
                 <p className='text-gray-100 text-md '>Julia Hickman</p>
-                <p className='text-gray-300 text-xs'>Omni Source</p>
+                <p className='text-gray-300 text-xs  mb-0'>Omni Source</p>
               </div>
               <QuoteRight height={30} width={30} fill="#FBBF24"></QuoteRight>
               </div>
@@ -168,7 +168,7 @@ export default function AboutMe(props) {
               <div className="flex justify-between">
               <div>
                 <p className='text-gray-100 text-md '>Julia Hickman</p>
-                <p className='text-gray-300 text-xs'>Omni Source</p>
+                <p className='text-gray-300 text-xs  mb-0'>Omni Source</p>
               </div>
               <QuoteRight height={30} width={30} fill="#FBBF24"></QuoteRight>
               </div>
@@ -185,7 +185,7 @@ export default function AboutMe(props) {
               <div className="flex justify-between">
               <div>
                 <p className='text-gray-100 text-md '>Julia Hickman</p>
-                <p className='text-gray-300 text-xs'>Omni Source</p>
+                <p className='text-gray-300 text-xs  mb-0'>Omni Source</p>
               </div>
               <QuoteRight height={30} width={30} fill="#FBBF24"></QuoteRight>
               </div>
@@ -201,17 +201,17 @@ export default function AboutMe(props) {
         <div className="bg-gray-700 text-center w-full rounded-xl border-gray-600 border-2 p-7">
           <Happy className="mx-auto" fill="#FBBF24" width={30} height={30}></Happy>
           <p className='text-gray-100 my-3 font-medium'>Happy Index</p>
-          <p className='text-gray-300 text-4xl'>100</p>
+          <p className='text-gray-300 text-4xl mb-0'>100</p>
         </div>
         <div className="bg-gray-700 text-center w-full rounded-xl border-gray-600 border-2 p-7">
           <Clock className="mx-auto" fill="#FBBF24" width={30} height={30}></Clock>
           <p className='text-gray-100 my-3 font-medium'>Working Hours</p>
-          <p className='text-gray-300 text-4xl'>720</p>
+          <p className='text-gray-300 text-4xl mb-0'>720</p>
         </div>
         <div className="bg-gray-700 text-center w-full rounded-xl border-gray-600 border-2 p-7">
           <Shuttle className="mx-auto" fill="#FBBF24" width={30} height={30}></Shuttle>
           <p className='text-gray-100 my-3 font-medium'>Overcome Index</p>
-          <p className='text-gray-300 text-4xl'>200</p>
+          <p className='text-gray-300 text-4xl mb-0'>200</p>
         </div>
       </div>
 

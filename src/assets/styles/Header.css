@@ -1,0 +1,4 @@
+.download-button:hover a{
+  color: #F59E0B;
+  transition: all 0.2s linear;
+}

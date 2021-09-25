@@ -12,7 +12,7 @@ export default function UserTemplate(props) {
       render={(propsRoute) => {
         return (
           <Fragment>
-            <div className="lg:flex min-h-screen bg-gray-800">
+            <div className="lg:flex min-h-screen bg-gray-600 ">
               <div className="lg:flex w-full">
                 <Menu></Menu>
                 <Header></Header>

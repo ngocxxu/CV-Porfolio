@@ -19,19 +19,19 @@ import { NavLink } from "react-router-dom";
 
 export default function DesignProject(props) {
   return (
-    <div className="w-full text-gray-100 lg:p-14">
+    <div className="w-full text-gray-100 lg:p-14 bg-gray-800">
       <div className="flex">
         <div className="text-3xl font-semibold mr-3 mt-2">Portfolio</div>
         <Portfolio fill="#FBBF24" width={40} height={40}></Portfolio>
       </div>
       <div className="my-4 space-x-5">
-        <NavLink to='/porfolio'  className="cursor-pointer text-gray-400 hover:text-gray-300">
+        <NavLink to='/porfolio'  className="cursor-pointer text-gray-400 hover:text-yellow-300">
           All
         </NavLink>
-        <NavLink to='/porfolio/designproject' activeClassName="text-yellow-300" className="cursor-pointer text-gray-400 hover:text-gray-300">
+        <NavLink to='/porfolio/designproject' activeClassName="text-yellow-300" className="cursor-pointer text-gray-400 hover:text-yellow-300">
           Design Project
         </NavLink>
-        <NavLink to='/porfolio/codingproject' activeClassName="text-yellow-300" className="cursor-pointer text-gray-400 hover:text-gray-300">
+        <NavLink to='/porfolio/codingproject' activeClassName="text-yellow-300" className="cursor-pointer text-gray-400 hover:text-yellow-300">
           Coding Project
         </NavLink>
       </div>
@@ -50,7 +50,7 @@ export default function DesignProject(props) {
               </p>
               <div className="flex justify-between space-x-2 mt-6">
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-full transition duration-500 ease-in-out">
-                  <a href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
+                  <a className="text-gray-100 hover:text-gray-100" href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
                 </button>
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function DesignProject(props) {
               </p>
               <div className="flex justify-between space-x-2 mt-6">
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-full transition duration-500 ease-in-out">
-                  <a href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
+                  <a className="text-gray-100 hover:text-gray-100" href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
                 </button>
               </div>
             </div>
@@ -108,7 +108,7 @@ export default function DesignProject(props) {
               </p>
               <div className="flex justify-between space-x-2 mt-6">
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-full transition duration-500 ease-in-out">
-                  <a href="https://www.figma.com/file/Gc6fEczJDy8ZoOw0z53zEE/Zupi-Paracord?node-id=0%3A1">Demo</a>
+                  <a className="text-gray-100 hover:text-gray-100" href="https://www.figma.com/file/Gc6fEczJDy8ZoOw0z53zEE/Zupi-Paracord?node-id=0%3A1">Demo</a>
                 </button>
               </div>
             </div>
@@ -137,7 +137,7 @@ export default function DesignProject(props) {
               </p>
               <div className="flex justify-between space-x-2 mt-6">
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-full transition duration-500 ease-in-out">
-                  <a href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
+                  <a className="text-gray-100 hover:text-gray-100" href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
                 </button>
               </div>
             </div>
@@ -166,7 +166,7 @@ export default function DesignProject(props) {
               </p>
               <div className="flex justify-between space-x-2 mt-6">
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-full transition duration-500 ease-in-out">
-                  <a href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
+                  <a className="text-gray-100 hover:text-gray-100" href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
                 </button>
               </div>
             </div>
@@ -195,7 +195,7 @@ export default function DesignProject(props) {
               </p>
               <div className="flex justify-between space-x-2 mt-6">
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-full transition duration-500 ease-in-out">
-                  <a href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
+                  <a className="text-gray-100 hover:text-gray-100" href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
                 </button>
               </div>
             </div>

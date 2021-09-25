@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
 import emailjs from "emailjs-com";
 import { ReactComponent as Call } from "../assets/svg/call.svg";
@@ -8,10 +9,8 @@ import { ReactComponent as Comment } from "../assets/svg/comment.svg";
 import { notificationFunction } from "../template/Notification";
 import "antd/dist/antd.css";
 
-
 export default function Contact(props) {
-
-  function sendEmail  (e)  {
+  function sendEmail(e) {
     e.preventDefault();
 
     emailjs
@@ -31,41 +30,50 @@ export default function Contact(props) {
           notificationFunction("error", "your message has not been sent to me");
         }
       );
-  
-}
-
+  }
 
   return (
-    <div className="w-full text-gray-100 lg:p-14">
+    <div className="w-full text-gray-100 lg:p-14 bg-gray-800 animate__animated animate__slideInRight">
       <div className="flex">
-        <div className="text-3xl font-semibold mr-3 mt-2">Portfolio</div>
+        <div className="text-3xl font-semibold mr-3 mt-2">Contact</div>
         <Call fill="#FBBF24" width={40} height={40}></Call>
       </div>
       <div className="lg:grid grid-cols-3 mt-8 ">
-        <div className="space-y-4">
+        <div className="space-y-6">
           <div className="bg-gray-700 flex flex-col items-center p-6 border border-gray-600">
             <Destination fill="#FBBF24" width={40} height={40}></Destination>
-            <p className="text-gray-100 font-medium mt-3">Ho Chi Minh City</p>
+            <p className="text-gray-100 font-medium mt-4 mb-0">Ho Chi Minh City</p>
           </div>
           <div className="bg-gray-700 flex flex-col items-center p-6 border border-gray-600">
             <Phone fill="#FBBF24" width={40} height={40}></Phone>
-            <p className="text-gray-100 font-medium mt-3">+84 902 4323 97</p>
+            <p className="text-gray-100 font-medium mt-4 mb-0">+84 902 4323 97</p>
           </div>
           <div className="bg-gray-700 flex flex-col items-center p-6 border border-gray-600">
             <Envelope fill="#FBBF24" width={40} height={40}></Envelope>
-            <p className="text-gray-100 font-medium mt-3">
+            <p className="text-gray-100 font-medium mt-4 mb-0">
               ngocquach43@gmail.com
             </p>
           </div>
           <div className="bg-gray-700 flex flex-col items-center p-6 border border-gray-600">
             <Comment fill="#FBBF24" width={40} height={40}></Comment>
-            <p className="text-gray-100 font-medium mt-3">Available</p>
+            <p className="text-gray-100 font-medium mt-4 mb-0">Available</p>
           </div>
         </div>
         <div className="col-span-2 mx-8">
-          <div></div>
           <div>
-            <div className="text-2xl font-semibold mt-10 mb-6">
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5409713841273!2d106.69511981532072!3d10.76981646225939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3fae9eef67%3A0xff0a755fc796f308!2zMTUgxJAuIFRy4bqnbiBIxrBuZyDEkOG6oW8sIFBoxrDhu51uZyBOZ3V54buFbiBUaMOhaSBCw6xuaCwgUXXhuq1uIDEsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1632559194424!5m2!1svi!2s"
+                // width={600}
+                height={200}
+                style={{ border: 0, width:'100%' }}
+                allowFullScreen
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div>
+            <div className="text-2xl font-semibold mt-6 mb-4">
               How Can I<span className="text-yellow-400"> Help You?</span>
             </div>
             <form onSubmit={sendEmail} className="lg:grid grid-cols-2 ">
@@ -78,7 +86,7 @@ export default function Contact(props) {
                     Full Name
                   </label>
                   <input
-                    class="shadow appearance-none border-2 border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-transparent"
+                    class="shadow appearance-none border-2 border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-200"
                     type="text"
                     placeholder="Full Name"
                   />{" "}
@@ -91,7 +99,7 @@ export default function Contact(props) {
                     Email Address
                   </label>
                   <input
-                    class="shadow appearance-none border-2 border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-transparent"
+                    class="shadow appearance-none border-2 border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-200"
                     type="email"
                     placeholder="Email Address"
                   />{" "}
@@ -104,7 +112,7 @@ export default function Contact(props) {
                     Subject
                   </label>
                   <input
-                    class="shadow appearance-none border-2 border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-transparent"
+                    class="shadow appearance-none border-2 border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-200"
                     type="text"
                     placeholder="Subject"
                   />{" "}
@@ -118,14 +126,18 @@ export default function Contact(props) {
                   Message
                 </label>
                 <textarea
-                  class="shadow appearance-none border-2 border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-transparent"
+                  class="shadow appearance-none border-2 border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-200"
                   type="text"
                   placeholder="Message"
-                  style={{height: '89%'}}
+                  style={{ height: "89%" }}
                 />{" "}
               </div>
               <div>
-              <input className="mt-6 w-full tracking-wide hover:bg-yellow-500 bg-transparent  bg-yellow-600 text-gray-100 p-3 rounded-lg focus:outline-none focus:shadow-outline cursor-pointer" type="submit" value="Send Message" />
+                <input
+                  className="mt-6 w-full tracking-wide hover:bg-yellow-500 bg-transparent  bg-yellow-600 text-gray-100 p-3 rounded-lg focus:outline-none focus:shadow-outline cursor-pointer"
+                  type="submit"
+                  value="Send Message"
+                />
               </div>
             </form>
           </div>

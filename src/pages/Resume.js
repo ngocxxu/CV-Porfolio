@@ -5,7 +5,7 @@ import { ReactComponent as Badge } from "../assets/svg/badge.svg";
 
 export default function Resume(props) {
   return (
-    <div className="w-full text-gray-100 lg:p-14">
+    <div className="w-full text-gray-100 lg:p-14 bg-gray-800 animate__animated animate__zoomIn">
       <div className="flex">
         <div className="text-3xl font-semibold mr-3 mt-2">Resumes</div>
         <Resumes fill="#FBBF24" width={40} height={40}></Resumes>
@@ -23,7 +23,7 @@ export default function Resume(props) {
                 <p className="text-gray-300 font-medium">06/2021 - 08/2021</p>
                 <p className="text-gray-400 text-sm">Kyanon Digital</p>
               </div>
-              <div className="vertical-axis border-l border-gray-400 mx-6"></div>
+              <div className="vertical-axis-4 border-l border-gray-400 mx-6"></div>
               <div className="education-right">
                 <p className="text-gray-100 font-medium text-lg mt-0.5">
                   Intern Frontend Development
@@ -275,10 +275,10 @@ export default function Resume(props) {
             <div className="flex justify-center items-center border-gray-500 border-r-2 py-6 px-10 bg-gray-700 rounded-l-xl">
               <Badge width={40} height={40} fill="#D1D5DB"></Badge>
             </div>
-            <div className='p-6'>
+            <div className='p-6 '>
               <p className="text-gray-100 text-md font-medium">TOEIC</p>
               <p className="text-gray-400 text-md">670 Scores</p>
-              <p className="text-gray-600 text-md">2019</p>
+              <p className="text-gray-600 text-md  mb-0">2019</p>
             </div>
           </div>
         </div>
