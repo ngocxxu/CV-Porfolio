@@ -159,7 +159,7 @@ export default function Porfolio(props) {
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-1/2 transition duration-500 ease-in-out">
                   <a
                     className="text-gray-100 hover:text-gray-100"
-                    href="https://zupi-cinema-project.web.app/"
+                    href="https://cv-bono-project.web.app/"
                   >
                     Demo
                   </a>
