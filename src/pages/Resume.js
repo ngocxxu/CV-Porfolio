@@ -1,18 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../assets/styles/Resume.css";
 import { ReactComponent as Resumes } from "../assets/svg/resume.svg";
 import { ReactComponent as Badge } from "../assets/svg/badge.svg";
 
 export default function Resume(props) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div className="w-full text-gray-100 lg:p-14 bg-gray-800 animate__animated animate__zoomIn">
       <div className="flex">
-        <div className="text-3xl font-semibold mr-3 mt-2">Resumes</div>
-        <Resumes fill="#FBBF24" width={40} height={40}></Resumes>
+        <div className="text-3xl font-semibold mr-3 lg:mt-2 mt-10 ml-6 lg:ml-0">Resumes</div>
+        <Resumes className='mt-8 lg:mt-0' fill="#FBBF24" width={40} height={40}></Resumes>
       </div>
       <div className="lg:flex">
-        <div className="resume-left w-3/5 mr-3">
-          <div className="text-2xl font-semibold mt-10">
+        <div className="resume-left lg:w-3/5 mr-3">
+          <div className="text-2xl font-semibold mt-10 ml-6 lg:ml-0">
             <span className="border-b-2 text-gray-100 border-yellow-400">
               Experience
             </span>
@@ -57,7 +61,7 @@ export default function Resume(props) {
             </div>
           </div>
 
-          <div className="text-2xl font-semibold mt-10">
+          <div className="text-2xl font-semibold mt-10 ml-6 lg:ml-0">
             <span className="border-b-2 text-gray-100 border-yellow-400">
               Education
             </span>
@@ -107,12 +111,12 @@ export default function Resume(props) {
             </div>
           </div>
         </div>
-        <div className="resume-right w-2/5">
-          <div className="text-2xl font-semibold mt-10">
+        <div className="resume-right lg:w-2/5">
+          <div className="text-2xl font-semibold mt-10 pl-6 lg:pl-0 ">
             Coding
             <span className="text-yellow-400"> Skills</span>
           </div>
-          <div className="mt-4 flex flex-wrap">
+          <div className="mt-4 flex flex-wrap mx-5 lg:mx-0">
             <span className="bg-gray-600 text-gray-100 px-2 py-1 rounded m-1">
               HTML/CSS
             </span>
@@ -138,7 +142,7 @@ export default function Resume(props) {
               TinyMCE
             </span>
           </div>
-          <div className="mt-4 flex flex-wrap">
+          <div className="mt-4 flex flex-wrap mx-5 lg:mx-0">
             <span className="bg-gray-600 text-gray-100 px-2 py-1 rounded m-1">
               Javascript
             </span>
@@ -161,7 +165,7 @@ export default function Resume(props) {
               RESTfull API
             </span>
           </div>
-          <div className="mt-4 flex flex-wrap">
+          <div className="mt-4 flex flex-wrap mx-5 lg:mx-0">
             <span className="bg-gray-600 text-gray-100 px-2 py-1 rounded m-1">
               ReactJS
             </span>
@@ -187,7 +191,7 @@ export default function Resume(props) {
               React DnD
             </span>
           </div>
-          <div className="mt-4 flex flex-wrap">
+          <div className="mt-4 flex flex-wrap mx-5 lg:mx-0">
             <span className="bg-gray-600 text-gray-100 px-2 py-1 rounded m-1">
               AngularJS
             </span>
@@ -198,7 +202,7 @@ export default function Resume(props) {
               Basic Typescript
             </span>
           </div>
-          <div className="mt-4 flex flex-wrap">
+          <div className="mt-4 flex flex-wrap mx-5 lg:mx-0">
             <span className="bg-gray-600 text-gray-100 px-2 py-1 rounded m-1">
               Others
             </span>
@@ -221,11 +225,11 @@ export default function Resume(props) {
               AnimateCSS
             </span>
           </div>
-          <div className="text-2xl font-semibold mt-10">
+          <div className="text-2xl font-semibold mt-10 pl-6 lg:pl-0">
             Others
             <span className="text-yellow-400"> Skills</span>
           </div>
-          <div className="mt-4 flex flex-wrap">
+          <div className="mt-4 flex flex-wrap mx-5 lg:mx-0">
             <span className="bg-gray-600 text-gray-100 px-2 py-1 rounded m-1">
               Design
             </span>
@@ -242,7 +246,7 @@ export default function Resume(props) {
               Figma
             </span>
           </div>
-          <div className="mt-4 flex flex-wrap">
+          <div className="mt-4 flex flex-wrap mx-5 lg:mx-0">
             <span className="bg-gray-600 text-gray-100 px-2 py-1 rounded m-1">
               Soft Skill
             </span>
@@ -265,13 +269,13 @@ export default function Resume(props) {
         </div>
       </div>
       <div>
-        <div className="text-2xl font-semibold mt-10">
+        <div className="text-2xl font-semibold mt-10 pl-6 lg:pl-0">
           <span className="border-b-2 text-gray-100 border-yellow-400">
             Certificates
           </span>
         </div>
-        <div className="lg:flex mt-8">
-          <div className="lg:flex border-gray-500 border-2 w-1/3 rounded-xl">
+        <div className="flex mt-8 ">
+          <div className="flex border-gray-500 border-2 lg:w-1/3 rounded-xl lg:mx-0 mx-auto">
             <div className="flex justify-center items-center border-gray-500 border-r-2 py-6 px-10 bg-gray-700 rounded-l-xl">
               <Badge width={40} height={40} fill="#D1D5DB"></Badge>
             </div>

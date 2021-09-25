@@ -3,13 +3,14 @@ import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import MainPhoto from "../assets/img/a.jpg";
 import "../assets/styles/Header.css";
+import { ITEM_SHOW, TOGGLE_MENU } from "../redux/const/const";
 
-export default function Header() {
+export default function Header2() {
   const dispatch = useDispatch();
   const { toggleMenu } = useSelector((state) => state.MenuReducer);
 
   return (
-    <div className="flex flex-col justify-between bg-gray-600 transition duration-500 ease-in-out h-full ">
+    <div className="flex flex-col justify-between bg-gray-600 lg:w-1/3 fixed lg:static w-4/5 z-10 right-0 transition duration-500 ease-in-out h-full animate__animated animate__fadeInRight">
       <div className=" lg:pt-24 lg:mx-20">
         <div className="mx-auto mt-8" style={{ width: 180 }}>
           <img
@@ -44,6 +45,12 @@ export default function Header() {
             <ul>
               <li>
                 <NavLink
+                  onClick={() => {
+                    dispatch({
+                      type: TOGGLE_MENU,
+                      booleanMenu: false
+                    });
+                  }}
                   className="mt-2 text-gray-100 hover:text-yellow-400"
                   activeClassName="text-yellow-400"
                   to="/home"
@@ -53,6 +60,16 @@ export default function Header() {
               </li>
               <li className="">
                 <NavLink
+                  onClick={() => {
+                    dispatch({
+                      type: TOGGLE_MENU,
+                      booleanMenu: false
+                    });
+                    dispatch({
+                      type: ITEM_SHOW,
+                      num: 1,
+                    });
+                  }}
                   className="mt-2 text-gray-100 hover:text-yellow-400"
                   activeClassName="text-yellow-400"
                   to="/aboutme"
@@ -62,6 +79,12 @@ export default function Header() {
               </li>
               <li className="">
                 <NavLink
+                  onClick={() => {
+                    dispatch({
+                      type: TOGGLE_MENU,
+                      booleanMenu: false
+                    });
+                  }}
                   className="mt-2 text-gray-100 hover:text-yellow-400"
                   activeClassName="text-yellow-400"
                   to="/resume"
@@ -71,6 +94,12 @@ export default function Header() {
               </li>
               <li className="">
                 <NavLink
+                  onClick={() => {
+                    dispatch({
+                      type: TOGGLE_MENU,
+                      booleanMenu: false
+                    });
+                  }}
                   className="mt-2 text-gray-100 hover:text-yellow-400"
                   activeClassName="text-yellow-400"
                   to="/porfolio"
@@ -80,6 +109,12 @@ export default function Header() {
               </li>
               <li className="">
                 <NavLink
+                  onClick={() => {
+                    dispatch({
+                      type: TOGGLE_MENU,
+                      booleanMenu: false
+                    });
+                  }}
                   className="mt-2 text-gray-100 hover:text-yellow-400"
                   activeClassName="text-yellow-400"
                   to="/contact"

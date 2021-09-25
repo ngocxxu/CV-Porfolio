@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Carousel from "react-elastic-carousel";
-import '../assets/styles/AboutMe.css'
+import { useDispatch, useSelector } from "react-redux";
+import "../assets/styles/AboutMe.css";
+import CountUp from "react-countup";
 import { ReactComponent as Adaptation } from "../assets/svg/adaptation.svg";
 import { ReactComponent as Administration } from "../assets/svg/administration.svg";
 import { ReactComponent as Creation } from "../assets/svg/creation.svg";
@@ -12,14 +14,21 @@ import { ReactComponent as Happy } from "../assets/svg/happy.svg";
 import { ReactComponent as Shuttle } from "../assets/svg/shuttle.svg";
 
 export default function AboutMe(props) {
+  const dispatch = useDispatch();
+  const { itemShow } = useSelector((state) => state.MenuReducer);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div className="w-full bg-gray-800 text-gray-100 lg:p-14 animate__animated animate__fadeInUp">
-      <div className="text-3xl font-semibold ">
+      <div className="text-3xl font-semibold lg:pt-2 pt-10 pl-6 lg:pl-0">
         About
         <span className="text-yellow-400"> Me</span>
       </div>
       <div className="lg:flex space-x-12 pt-8">
-        <div className="w-7/12">
+        <div className="lg:w-7/12 px-6 lg:px-0">
           <p className="text-gray-200">
             Previously I used to be a chemical engineering but due to both
             logical and creative passion for IT since I studied in middle
@@ -71,30 +80,28 @@ export default function AboutMe(props) {
           </ul>
         </div>
       </div>
-      <div className="text-2xl font-semibold mt-14">
+      <div className="text-2xl font-semibold mt-14 pl-6 lg:pl-0">
         What
         <span className="text-yellow-400"> I Can Do</span>
       </div>
-      <div className="grid grid-cols-2 ">
-        <div className="text-gray-200 mt-6">
+      <div className="lg:grid grid-cols-2 ">
+        <div className="text-gray-200 mt-6 px-6 lg:px-0">
           <Code fill="#FBBF24" width={42} height={42}></Code>
           <p className="font-medium text-xl my-1 ">Code</p>
           <p className="text-gray-300">
-            Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio
-            tortor bibendum massa, sit amet ultricies ex lectus scelerisque
-            nibh. Ut non sodales.
+            I can spend all day coding without getting tired. My working time is
+            very flexible, it can fit many projects.
           </p>
         </div>
-        <div className="text-gray-200 mt-6">
+        <div className="text-gray-200 mt-6 px-6 lg:px-0">
           <Creation fill="#FBBF24" width={42} height={42}></Creation>
           <p className="font-medium text-xl my-1 ">Creation</p>
           <p className="text-gray-300">
-            Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio
-            tortor bibendum massa, sit amet ultricies ex lectus scelerisque
-            nibh. Ut non sodales.
+            For me, creativity is equally important, it helps me evaluate and
+            analyze the complexity of the interface.
           </p>
         </div>
-        <div className="text-gray-200 mt-6">
+        <div className="text-gray-200 mt-6 px-6 lg:px-0">
           <Administration
             fill="#FBBF24"
             width={42}
@@ -102,41 +109,38 @@ export default function AboutMe(props) {
           ></Administration>
           <p className="font-medium text-xl my-1 ">Management</p>
           <p className="text-gray-300">
-            Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio
-            tortor bibendum massa, sit amet ultricies ex lectus scelerisque
-            nibh. Ut non sodales.
+            For each project always requires completion time, so I always have
+            to manage the assigned tasks well.
           </p>
         </div>
-        <div className="text-gray-200 mt-6">
+        <div className="text-gray-200 mt-6 px-6 lg:px-0">
           <Adaptation fill="#FBBF24" width={42} height={42}></Adaptation>
           <p className="font-medium text-xl my-1 ">Adaptation</p>
           <p className="text-gray-300">
-            Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio
-            tortor bibendum massa, sit amet ultricies ex lectus scelerisque
-            nibh. Ut non sodales.
+            I can adapt well in different working environments or different
+            projects without feeling much pressure.
           </p>
         </div>
       </div>
-      <div className="text-2xl font-semibold mt-14 mb-8">
+      <div className="text-2xl font-semibold mt-14 mb-8 pl-6 lg:pl-0">
         Inspirational
         <span className="text-yellow-400"> Quotes</span>
       </div>
-      <div className="" style={{cursor: 'grab'}}>
-        <Carousel itemsToScroll={2} itemsToShow={2}>
+      <div className="" style={{ cursor: "grab" }}>
+        <Carousel itemsToScroll={2} itemsToShow={itemShow}>
           <item>
             <div className="border-gray-300 border-2 m-3 p-6 rounded-2xl">
               <QuoteLeft height={30} width={30} fill="#FBBF24"></QuoteLeft>
               <p className="text-gray-300 my-3 italic ">
-                Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio
-                tortor bibendum massa, sit amet ultricies ex lectus scelerisque
-                nibh. Ut non sodales.
+                Today is hard, tomorrow will be worse but the day after tomorrow
+                will be sunshine.
               </p>
               <div className="flex justify-between">
-              <div className=''>
-                <p className='text-gray-100 text-md '>Julia Hickman</p>
-                <p className='text-gray-300 text-xs mb-0'>Omni Source</p>
-              </div>
-              <QuoteRight height={30} width={30} fill="#FBBF24"></QuoteRight>
+                <div className="">
+                  <p className="text-gray-100 text-md ">Jack Ma</p>
+                  <p className="text-gray-300 text-xs mb-0">Jack Ma</p>
+                </div>
+                <QuoteRight height={30} width={30} fill="#FBBF24"></QuoteRight>
               </div>
             </div>
           </item>
@@ -144,16 +148,15 @@ export default function AboutMe(props) {
             <div className="border-gray-300 border-2 m-3 p-6 rounded-2xl">
               <QuoteLeft height={30} width={30} fill="#FBBF24"></QuoteLeft>
               <p className="text-gray-300 my-3 italic ">
-                Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio
-                tortor bibendum massa, sit amet ultricies ex lectus scelerisque
-                nibh. Ut non sodales.
+                Life is like riding a bicycle. To keep your balance, you must
+                keep moving.
               </p>
               <div className="flex justify-between">
-              <div>
-                <p className='text-gray-100 text-md '>Julia Hickman</p>
-                <p className='text-gray-300 text-xs  mb-0'>Omni Source</p>
-              </div>
-              <QuoteRight height={30} width={30} fill="#FBBF24"></QuoteRight>
+                <div>
+                  <p className="text-gray-100 text-md ">Albert Einstein</p>
+                  <p className="text-gray-300 text-xs  mb-0">Albert Einstein</p>
+                </div>
+                <QuoteRight height={30} width={30} fill="#FBBF24"></QuoteRight>
               </div>
             </div>
           </item>
@@ -161,16 +164,15 @@ export default function AboutMe(props) {
             <div className="border-gray-300 border-2 m-3 p-6 rounded-2xl">
               <QuoteLeft height={30} width={30} fill="#FBBF24"></QuoteLeft>
               <p className="text-gray-300 my-3 italic ">
-                Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio
-                tortor bibendum massa, sit amet ultricies ex lectus scelerisque
-                nibh. Ut non sodales.
+                Success is most often achieved by those who don’t know that
+                failure is inevitable.{" "}
               </p>
               <div className="flex justify-between">
-              <div>
-                <p className='text-gray-100 text-md '>Julia Hickman</p>
-                <p className='text-gray-300 text-xs  mb-0'>Omni Source</p>
-              </div>
-              <QuoteRight height={30} width={30} fill="#FBBF24"></QuoteRight>
+                <div>
+                  <p className="text-gray-100 text-md ">Coco Chanel</p>
+                  <p className="text-gray-300 text-xs  mb-0">Coco Chanel</p>
+                </div>
+                <QuoteRight height={30} width={30} fill="#FBBF24"></QuoteRight>
               </div>
             </div>
           </item>
@@ -178,43 +180,62 @@ export default function AboutMe(props) {
             <div className="border-gray-300 border-2 m-3 p-6 rounded-2xl">
               <QuoteLeft height={30} width={30} fill="#FBBF24"></QuoteLeft>
               <p className="text-gray-300 my-3 italic ">
-                Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio
-                tortor bibendum massa, sit amet ultricies ex lectus scelerisque
-                nibh. Ut non sodales.
+                Life is not about waiting for the storm to pass, it’s about
+                learning to dance in the rain.
               </p>
               <div className="flex justify-between">
-              <div>
-                <p className='text-gray-100 text-md '>Julia Hickman</p>
-                <p className='text-gray-300 text-xs  mb-0'>Omni Source</p>
-              </div>
-              <QuoteRight height={30} width={30} fill="#FBBF24"></QuoteRight>
+                <div>
+                  <p className="text-gray-100 text-md ">Vivian Greene</p>
+                  <p className="text-gray-300 text-xs  mb-0">Vivian Greene</p>
+                </div>
+                <QuoteRight height={30} width={30} fill="#FBBF24"></QuoteRight>
               </div>
             </div>
           </item>
         </Carousel>
       </div>
-      <div className="text-2xl font-semibold mt-6 mb-8">
+      <div className="text-2xl font-semibold mt-6 mb-8 pl-6 lg:pl-0">
         Fun
         <span className="text-yellow-400"> Facts</span>
       </div>
-      <div className="flex space-x-8">
+      <div className="lg:flex lg:space-x-8 lg:space-y-0 space-y-6 m-6 lg:m-0">
         <div className="bg-gray-700 text-center w-full rounded-xl border-gray-600 border-2 p-7">
-          <Happy className="mx-auto" fill="#FBBF24" width={30} height={30}></Happy>
-          <p className='text-gray-100 my-3 font-medium'>Happy Index</p>
-          <p className='text-gray-300 text-4xl mb-0'>100</p>
+          <Happy
+            className="mx-auto"
+            fill="#FBBF24"
+            width={30}
+            height={30}
+          ></Happy>
+          <p className="text-gray-100 my-3 font-medium">Happy Index</p>
+          <p className="text-gray-300 text-4xl mb-0">
+            <CountUp end={100} duration={8}></CountUp>
+          </p>
         </div>
         <div className="bg-gray-700 text-center w-full rounded-xl border-gray-600 border-2 p-7">
-          <Clock className="mx-auto" fill="#FBBF24" width={30} height={30}></Clock>
-          <p className='text-gray-100 my-3 font-medium'>Working Hours</p>
-          <p className='text-gray-300 text-4xl mb-0'>720</p>
+          <Clock
+            className="mx-auto"
+            fill="#FBBF24"
+            width={30}
+            height={30}
+          ></Clock>
+          <p className="text-gray-100 my-3 font-medium">Working Hours</p>
+          <p className="text-gray-300 text-4xl mb-0">
+          <CountUp end={720} duration={8}></CountUp>
+          </p>
         </div>
         <div className="bg-gray-700 text-center w-full rounded-xl border-gray-600 border-2 p-7">
-          <Shuttle className="mx-auto" fill="#FBBF24" width={30} height={30}></Shuttle>
-          <p className='text-gray-100 my-3 font-medium'>Overcome Index</p>
-          <p className='text-gray-300 text-4xl mb-0'>200</p>
+          <Shuttle
+            className="mx-auto"
+            fill="#FBBF24"
+            width={30}
+            height={30}
+          ></Shuttle>
+          <p className="text-gray-100 my-3 font-medium">Overcome Index</p>
+          <p className="text-gray-300 text-4xl mb-0">
+          <CountUp end={200} duration={8}></CountUp>
+          </p>
         </div>
       </div>
-
     </div>
   );
 }
