@@ -17,7 +17,7 @@ import demojira from "../assets/img/demojira.png";
 import democv from "../assets/img/democv.png";
 import { NavLink } from "react-router-dom";
 
-export default function Porfolio(props) {
+export default function CodingProject(props) {
   return (
     <div className="w-full text-gray-100 lg:p-14">
       <div className="flex">
@@ -25,13 +25,13 @@ export default function Porfolio(props) {
         <Portfolio fill="#FBBF24" width={40} height={40}></Portfolio>
       </div>
       <div className="my-4 space-x-5">
-      <NavLink to='/porfolio' activeClassName="text-yellow-300" className="cursor-pointer text-gray-400 hover:text-gray-300">
+      <NavLink to='/porfolio' className="cursor-pointer text-gray-400 hover:text-gray-300">
           All
         </NavLink>
-        <NavLink to='/porfolio/designproject'  className="cursor-pointer text-gray-400 hover:text-gray-300">
+        <NavLink to='/porfolio/designproject' activeClassName="text-yellow-300" className="cursor-pointer text-gray-400 hover:text-gray-300">
           Design Project
         </NavLink>
-        <NavLink to='/porfolio/codingproject'  className="cursor-pointer text-gray-400 hover:text-gray-300">
+        <NavLink to='/porfolio/codingproject' activeClassName="text-yellow-300" className="cursor-pointer text-gray-400 hover:text-gray-300">
           Coding Project
         </NavLink>
       </div>
@@ -334,179 +334,6 @@ export default function Porfolio(props) {
             </div>
           </div>
 
-          <div className="max-w-sm rounded overflow-hidden shadow-lg bg-gray-100 transition duration-500 ease-in-out transform hover:-translate-y-1 m-4">
-            <img className="w-full" src={demo4} alt="demo4" />
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2 text-gray-600">
-                Carousel 1
-              </div>
-              <p className="text-gray-400 text-base">
-                A small project is taken and inspired which based on my handmade
-                product.
-              </p>
-              <div className="flex justify-between space-x-2 mt-6">
-                <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-full transition duration-500 ease-in-out">
-                  <a href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
-                </button>
-              </div>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:text-gray-100 hover:bg-yellow-500 cursor-pointer transition duration-500 ease-in-out">
-                #illustrator
-              </span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:text-gray-100 hover:bg-yellow-500 cursor-pointer transition duration-500 ease-in-out">
-                #paracord
-              </span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:text-gray-100 hover:bg-yellow-500 cursor-pointer transition duration-500 ease-in-out">
-                #strong
-              </span>
-            </div>
-          </div>
-
-          <div className="max-w-sm rounded overflow-hidden shadow-lg bg-gray-100 transition duration-500 ease-in-out transform hover:-translate-y-1 m-4">
-            <img className="w-full" src={demo5} alt="demo5" />
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2 text-gray-600">
-                Carousel 2
-              </div>
-              <p className="text-gray-400 text-base">
-                A small project is taken and inspired which based on my handmade
-                product.
-              </p>
-              <div className="flex justify-between space-x-2 mt-6">
-                <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-full transition duration-500 ease-in-out">
-                  <a href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
-                </button>
-              </div>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:text-gray-100 hover:bg-yellow-500 cursor-pointer transition duration-500 ease-in-out">
-                #illustrator
-              </span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:text-gray-100 hover:bg-yellow-500 cursor-pointer transition duration-500 ease-in-out">
-                #paracord
-              </span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:text-gray-100 hover:bg-yellow-500 cursor-pointer transition duration-500 ease-in-out">
-                #strong
-              </span>
-            </div>
-          </div>
-
-          <div className="max-w-sm rounded overflow-hidden shadow-lg bg-gray-100 transition duration-500 ease-in-out transform hover:-translate-y-1 m-4">
-            <img className="w-full" src={demo6} alt="demo6" />
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2 text-gray-600">
-                Themes
-              </div>
-              <p className="text-gray-400 text-base">
-                A small project is taken and inspired which based on my handmade
-                product.
-              </p>
-              <div className="flex justify-between space-x-2 mt-6">
-                <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-full transition duration-500 ease-in-out">
-                  <a href="https://www.figma.com/file/Gc6fEczJDy8ZoOw0z53zEE/Zupi-Paracord?node-id=0%3A1">Demo</a>
-                </button>
-              </div>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:text-gray-100 hover:bg-yellow-500 cursor-pointer transition duration-500 ease-in-out">
-                #illustrator
-              </span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:text-gray-100 hover:bg-yellow-500 cursor-pointer transition duration-500 ease-in-out">
-                #paracord
-              </span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:text-gray-100 hover:bg-yellow-500 cursor-pointer transition duration-500 ease-in-out">
-                #strong
-              </span>
-            </div>
-          </div>       
-
-          <div className="max-w-sm rounded overflow-hidden shadow-lg bg-gray-100 transition duration-500 ease-in-out transform hover:-translate-y-1 m-4">
-            <img className="w-full" src={demo1} alt="demo1" />
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2 text-gray-600">
-                Carousel 3
-              </div>
-              <p className="text-gray-400 text-base">
-                A small project is taken and inspired which based on my handmade
-                product.
-              </p>
-              <div className="flex justify-between space-x-2 mt-6">
-                <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-full transition duration-500 ease-in-out">
-                  <a href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
-                </button>
-              </div>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:text-gray-100 hover:bg-yellow-500 cursor-pointer transition duration-500 ease-in-out">
-                #illustrator
-              </span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:text-gray-100 hover:bg-yellow-500 cursor-pointer transition duration-500 ease-in-out">
-                #paracord
-              </span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:text-gray-100 hover:bg-yellow-500 cursor-pointer transition duration-500 ease-in-out">
-                #strong
-              </span>
-            </div>
-          </div>
-
-          <div className="max-w-sm rounded overflow-hidden shadow-lg bg-gray-100 transition duration-500 ease-in-out transform hover:-translate-y-1 m-4">
-            <img className="w-full" src={demo2} alt="demo2" />
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2 text-gray-600">
-                Carousel 4
-              </div>
-              <p className="text-gray-400 text-base">
-                A small project is taken and inspired which based on my handmade
-                product.
-              </p>
-              <div className="flex justify-between space-x-2 mt-6">
-                <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-full transition duration-500 ease-in-out">
-                  <a href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
-                </button>
-              </div>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:text-gray-100 hover:bg-yellow-500 cursor-pointer transition duration-500 ease-in-out">
-                #illustrator
-              </span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:text-gray-100 hover:bg-yellow-500 cursor-pointer transition duration-500 ease-in-out">
-                #paracord
-              </span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:text-gray-100 hover:bg-yellow-500 cursor-pointer transition duration-500 ease-in-out">
-                #strong
-              </span>
-            </div>
-          </div>
-
-          <div className="max-w-sm rounded overflow-hidden shadow-lg bg-gray-100 transition duration-500 ease-in-out transform hover:-translate-y-1 m-4">
-            <img className="w-full" src={demo3} alt="demo3" />
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2 text-gray-600">
-                Logo
-              </div>
-              <p className="text-gray-400 text-base">
-                A small project is taken and inspired which based on my handmade
-                product.
-              </p>
-              <div className="flex justify-between space-x-2 mt-6">
-                <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-full transition duration-500 ease-in-out">
-                  <a href="https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ">Demo</a>
-                </button>
-              </div>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:text-gray-100 hover:bg-yellow-500 cursor-pointer transition duration-500 ease-in-out">
-                #illustrator
-              </span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:text-gray-100 hover:bg-yellow-500 cursor-pointer transition duration-500 ease-in-out">
-                #paracord
-              </span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:text-gray-100 hover:bg-yellow-500 cursor-pointer transition duration-500 ease-in-out">
-                #strong
-              </span>
-            </div>
-          </div>
 
         </div>
       </div>

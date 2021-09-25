@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/styles/Resume.css";
 import { ReactComponent as Resumes } from "../assets/svg/resume.svg";
+import { ReactComponent as Badge } from "../assets/svg/badge.svg";
 
 export default function Resume(props) {
   return (
@@ -9,8 +10,8 @@ export default function Resume(props) {
         <div className="text-3xl font-semibold mr-3 mt-2">Resumes</div>
         <Resumes fill="#FBBF24" width={40} height={40}></Resumes>
       </div>
-      <div className="flex">
-        <div className="resume-left w-1/2">
+      <div className="lg:flex">
+        <div className="resume-left w-3/5 mr-3">
           <div className="text-2xl font-semibold mt-10">
             <span className="border-b-2 text-gray-100 border-yellow-400">
               Experience
@@ -49,8 +50,8 @@ export default function Resume(props) {
                 </p>
                 <p className="text-gray-400 ">
                   - Check and monitor actions to solve non-conforming
-                  operations. <br /> - Inform superiors of any issues
-                  on lenses and support in additional investigation.
+                  operations. <br /> - Inform superiors of any issues on lenses
+                  and support in additional investigation.
                 </p>
               </div>
             </div>
@@ -106,7 +107,181 @@ export default function Resume(props) {
             </div>
           </div>
         </div>
-        <div className="resume-right w-1/2"></div>
+        <div className="resume-right w-2/5">
+          <div className="text-2xl font-semibold mt-10">
+            Coding
+            <span className="text-yellow-400"> Skills</span>
+          </div>
+          <div className="mt-4 flex flex-wrap">
+            <span className="bg-gray-600 text-gray-100 px-2 py-1 rounded m-1">
+              HTML/CSS
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              HTML5
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              CSS3
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              SASS
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Bootstrap
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Tailwindcss
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Pug
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              TinyMCE
+            </span>
+          </div>
+          <div className="mt-4 flex flex-wrap">
+            <span className="bg-gray-600 text-gray-100 px-2 py-1 rounded m-1">
+              Javascript
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              ES5/ES6
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              JQuery
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Basic Lodash
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              AJAX
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Axious
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              RESTfull API
+            </span>
+          </div>
+          <div className="mt-4 flex flex-wrap">
+            <span className="bg-gray-600 text-gray-100 px-2 py-1 rounded m-1">
+              ReactJS
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Redux-thunk/saga
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Router
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Hooks
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Basic React Spring
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Styled Component
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Formik/Yup
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              React DnD
+            </span>
+          </div>
+          <div className="mt-4 flex flex-wrap">
+            <span className="bg-gray-600 text-gray-100 px-2 py-1 rounded m-1">
+              AngularJS
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Basic AngularJS
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Basic Typescript
+            </span>
+          </div>
+          <div className="mt-4 flex flex-wrap">
+            <span className="bg-gray-600 text-gray-100 px-2 py-1 rounded m-1">
+              Others
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Basic Git
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Ant Design
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Material UI
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Storybook
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              History
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              AnimateCSS
+            </span>
+          </div>
+          <div className="text-2xl font-semibold mt-10">
+            Others
+            <span className="text-yellow-400"> Skills</span>
+          </div>
+          <div className="mt-4 flex flex-wrap">
+            <span className="bg-gray-600 text-gray-100 px-2 py-1 rounded m-1">
+              Design
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Adobe Illustrator
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Basic Adobe Photoshop
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Adobe XD
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Figma
+            </span>
+          </div>
+          <div className="mt-4 flex flex-wrap">
+            <span className="bg-gray-600 text-gray-100 px-2 py-1 rounded m-1">
+              Soft Skill
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Presentation
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Teamwork
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Learning Skills
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Self-motivation
+            </span>
+            <span className="bg-yellow-500 text-gray-100 px-2 py-1 rounded m-1">
+              Creativity
+            </span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="text-2xl font-semibold mt-10">
+          <span className="border-b-2 text-gray-100 border-yellow-400">
+            Certificates
+          </span>
+        </div>
+        <div className="lg:flex mt-8">
+          <div className="lg:flex border-gray-500 border-2 w-1/3 rounded-xl">
+            <div className="flex justify-center items-center border-gray-500 border-r-2 py-6 px-10 bg-gray-700 rounded-l-xl">
+              <Badge width={40} height={40} fill="#D1D5DB"></Badge>
+            </div>
+            <div className='p-6'>
+              <p className="text-gray-100 text-md font-medium">TOEIC</p>
+              <p className="text-gray-400 text-md">670 Scores</p>
+              <p className="text-gray-600 text-md">2019</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
