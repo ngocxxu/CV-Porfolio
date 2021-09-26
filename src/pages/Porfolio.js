@@ -20,7 +20,7 @@ import { NavLink } from "react-router-dom";
 export default function Porfolio(props) {
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  },[]);
 
   return (
     <div className="w-full text-gray-100 lg:p-14 bg-gray-800 animate__animated animate__fadeIn">

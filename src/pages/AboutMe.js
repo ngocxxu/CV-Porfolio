@@ -19,7 +19,7 @@ export default function AboutMe(props) {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  },[]);
 
   return (
     <div className="w-full bg-gray-800 text-gray-100 lg:p-14 animate__animated animate__fadeInUp">
@@ -43,8 +43,8 @@ export default function AboutMe(props) {
             software such as AI, PTS for application in frontend.
           </p>
         </div>
-        <div className="">
-          <ul className=" space-y-2">
+        <div className="lg:w-3/12 pt-4 lg:pt-0">
+          <ul className=" space-y-2 ">
             <li className="text-yellow-400 font-medium">
               Birthday
               <span className="text-gray-200 ml-2 font-normal">

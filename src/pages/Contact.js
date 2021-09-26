@@ -33,8 +33,7 @@ export default function Contact(props) {
   }
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
-
+  },[]);
 
   return (
     <div className="w-full text-gray-100 lg:p-14 bg-gray-800 animate__animated animate__slideInRight">
