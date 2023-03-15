@@ -3,14 +3,14 @@ name: Porfolio CI/CD
 on:
   push:
     branches:
-      - menu-page
+      - master
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    # Clone code latest from homepage branch
+    # Clone code latest from master branch
     - uses: actions/checkout@v3
 
     - name: Use Node.js
