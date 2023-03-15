@@ -72,7 +72,7 @@
   border-radius: 100%;
   background-color: #fbbe2465;
   left: 30%;
-  top: 3%;
+  top: 2%;
 }
 .vertical-axis-4:after {
   content: "";
@@ -83,7 +83,7 @@
   border: 2px solid #fbbf24;
   background-color: #1f2937;
   left: 30%;
-  top: 5%;
+  top: 3.5%;
   margin-left: 4px;
 }
 
