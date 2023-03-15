@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import dayjs from 'dayjs';
+import React from "react";
 import { NavLink } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import MainPhoto from "../assets/img/a.jpg";
+import MainPhoto from "../assets/img/avame.jpg";
 import "../assets/styles/Header.css";
 
 export default function Header() {
-  const dispatch = useDispatch();
-  const { toggleMenu } = useSelector((state) => state.MenuReducer);
 
   return (
     <div className="flex flex-col justify-between bg-gray-600 transition duration-500 ease-in-out h-full ">
@@ -102,7 +100,7 @@ export default function Header() {
         </div>
       </div>
       <p className="text-gray-300 text-xs text-center py-4 mb-0 ">
-        © 2020 All rights reserved.
+        © {dayjs().year()} All rights reserved.
       </p>
     </div>
   );
