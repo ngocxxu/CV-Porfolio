@@ -1,7 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { ReactComponent as Book } from "../assets/svg/book.svg";
 import { ReactComponent as Briefcase } from "../assets/svg/briefcase.svg";
 import { ReactComponent as GraduationCap } from "../assets/svg/graduation-cap.svg";
 import { ReactComponent as Home } from "../assets/svg/home.svg";

@@ -1,21 +1,15 @@
 import React from "react";
-import { ReactComponent as Portfolio } from "../assets/svg/portfolio.svg";
-import demo1 from "../assets/img/demo1.png";
-import demo2 from "../assets/img/demo2.png";
-import demo3 from "../assets/img/demo3.jpg";
-import demo4 from "../assets/img/demo4.png";
-import demo5 from "../assets/img/demo5.png";
-import demo6 from "../assets/img/demo6.png";
+import { NavLink } from "react-router-dom";
+import democinema from "../assets/img/democinema.png";
+import democv from "../assets/img/democv.png";
+import demojira from "../assets/img/demojira.png";
 import demomini1 from "../assets/img/demomini1.png";
 import demomini2 from "../assets/img/demomini2.png";
 import demomini3 from "../assets/img/demomini3.png";
 import minidemo4 from "../assets/img/minidemo4.png";
 import minidemo5 from "../assets/img/minidemo5.png";
 import minidemo6 from "../assets/img/minidemo6.png";
-import democinema from "../assets/img/democinema.png";
-import demojira from "../assets/img/demojira.png";
-import democv from "../assets/img/democv.png";
-import { NavLink } from "react-router-dom";
+import { ReactComponent as Portfolio } from "../assets/svg/portfolio.svg";
 
 export default function CodingProject(props) {
   return (
