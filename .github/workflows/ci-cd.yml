@@ -1,0 +1,41 @@
+name: Porfolio CI/CD
+
+on:
+  push:
+    branches:
+      - menu-page
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Clone code latest from homepage branch
+    - uses: actions/checkout@v3
+
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+          node-version: 16.x
+          cache: npm
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Set environment variable
+      run: |
+        REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL }}
+        echo "REACT_APP_API_URL=$REACT_APP_API_URL" >> $GITHUB_ENV
+        echo "::addmask::$REACT_APP_API_URL"
+
+    - name: Build
+      run: npm run build
+      
+    - name: Deploy to Firebase
+      uses: w9jds/firebase-action@master
+      with:
+        args: deploy --only hosting
+      env:
+        # firebase login:ci on your local computer and store the token as the FIREBASE_TOKEN secret
+        # GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
