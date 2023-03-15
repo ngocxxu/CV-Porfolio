@@ -33,12 +33,11 @@ export default function Contact(props) {
   }
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
-
+  },[]);
 
   return (
     <div className="w-full text-gray-100 lg:p-14 bg-gray-800 animate__animated animate__slideInRight">
-      <div className="flex">
+      <div className="flex ">
         <div className="text-3xl font-semibold mr-3 lg:mt-2 mt-10 ml-6 lg:ml-0">Contact</div>
         <Call className='mt-8 lg:mt-0' fill="#FBBF24" width={40} height={40}></Call>
       </div>
@@ -80,7 +79,7 @@ export default function Contact(props) {
             <div className="text-2xl font-semibold mt-6 mb-4">
               How Can I<span className="text-yellow-400"> Help You?</span>
             </div>
-            <form onSubmit={sendEmail} className="lg:grid grid-cols-2 ">
+            <form onSubmit={sendEmail} className="lg:grid grid-cols-2 lg:pb-0 pb-6">
               <div className="space-y-2">
                 <div>
                   <label

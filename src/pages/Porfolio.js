@@ -20,7 +20,7 @@ import { NavLink } from "react-router-dom";
 export default function Porfolio(props) {
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  },[]);
 
   return (
     <div className="w-full text-gray-100 lg:p-14 bg-gray-800 animate__animated animate__fadeIn">
@@ -50,7 +50,7 @@ export default function Porfolio(props) {
         </NavLink>
       </div>
 
-      <div className="lg:flex">
+      <div className="lg:flex lg:pb-0 pb-1">
         <div className="lg:grid grid-cols-3 gap-3 justify-center ">
           <div className="max-w-sm rounded overflow-hidden shadow-lg bg-gray-100 transition duration-500 ease-in-out transform hover:-translate-y-1 m-4">
             <img className="w-full" src={democinema} alt="democinema" />
@@ -159,7 +159,7 @@ export default function Porfolio(props) {
                 <button className="bg-gray-600 hover:bg-yellow-600 p-2 rounded-xl w-1/2 transition duration-500 ease-in-out">
                   <a
                     className="text-gray-100 hover:text-gray-100"
-                    href="https://zupi-cinema-project.web.app/"
+                    href="https://cv-bono-project.web.app/"
                   >
                     Demo
                   </a>
