@@ -112,7 +112,7 @@ export const Info = {
         time: '08/2015 - 09/2019',
         company: 'Ton Duc Thang University',
         position: 'Chemical Engineering',
-        description: ['- Organic Material.', '- GPA: 7.5/10'],
+        description: ['- GPA: 7.5/10'],
       },
     ],
     skill: [
