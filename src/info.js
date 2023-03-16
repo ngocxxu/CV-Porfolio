@@ -192,4 +192,151 @@ export const Info = {
       },
     ],
   },
+  portfolioPage: {
+    coding: [
+      {
+        porfolioImage:
+          'https://res.cloudinary.com/ngocxxu/image/upload/v1678981429/CV/prowe_b0w349.png',
+        title: 'Prowe Electronic',
+        description:
+          'Web is a electronic e-commerce web which I built the backend from myself and combined it with the frontend.',
+        hashtag: ['#reactjs', '#fullstack', '#database'],
+        linkGithub: 'https://github.com/ngocxxu/prowe_electronic_store',
+        linkGithub2: 'https://github.com/ngocxxu/prowe_electronic_store_server',
+        linkDemo: 'https://prowe-electronic-store.web.app/',
+      },
+      {
+        porfolioImage:
+          'https://res.cloudinary.com/ngocxxu/image/upload/v1678981428/CV/papzifood_qjcncm.png',
+        title: 'Papzi Food',
+        description:
+          'Web is used to buy or order fast food anything you want. I use API of CommerceJS to build it.',
+        hashtag: ['#reactjs', '#e-commerce', '#foody'],
+        linkGithub: 'https://github.com/ngocxxu/Foody_Web',
+        linkDemo: 'https://papzi-foody.web.app/',
+      },
+      {
+        porfolioImage:
+          'https://res.cloudinary.com/ngocxxu/image/upload/v1678981429/CV/realstate_knfgt8.png',
+        title: 'Real Estate',
+        description:
+          'Web is used to watch the booking information in all of the hotels in the world. I use rapidAPI to build it.',
+        hashtag: ['#nextjs', '#e-commerce', '#trendy'],
+        linkGithub: 'https://github.com/ngocxxu/Modern-Real-Estate-Project',
+        linkDemo: 'https://modern-real-estate-project.vercel.app/',
+      },
+      {
+        porfolioImage:
+          'https://res.cloudinary.com/ngocxxu/image/upload/v1678979108/CV/democinema_y3pwag.png',
+        title: 'Cinema Management',
+        description:
+          'Cinema web is used to such as booking tickets as customer role and film & user management as admin role.',
+        hashtag: ['#reactjs', '#booking', '#manage'],
+        linkGithub: 'https://github.com/ngocxxu/Cinema-Project',
+        linkDemo: 'https://zupi-cinema-project.web.app/',
+      },
+      {
+        porfolioImage:
+          'https://res.cloudinary.com/ngocxxu/image/upload/v1678979108/CV/demojira_lpuawr.png',
+        title: 'Jira Management',
+        description:
+          'Jira web is used to control the projects and tasks for members and help managers can be easy interact.',
+        hashtag: ['#reactjs', '#tasks', '#manage'],
+        linkGithub: 'https://github.com/ngocxxu/JIRA_PROJECT',
+        linkDemo: 'https://zupi-jira-project.web.app/',
+      },
+      {
+        porfolioImage:
+          'https://res.cloudinary.com/ngocxxu/image/upload/v1678979110/CV/democv_ie8bc8.png',
+        title: 'Curriculum Vitae',
+        description:
+          'This project is used to help employers consult and learn more information from candidates.',
+        hashtag: ['#reactjs', '#cv', '#information'],
+        linkGithub: 'https://github.com/ngocxxu/CV-Porfolio',
+        linkDemo: 'https://cv-bono-project.web.app/',
+      },
+      {
+        porfolioImage:
+          'https://res.cloudinary.com/ngocxxu/image/upload/v1678979108/CV/demomini2_l1wuar.png',
+        title: 'Chinese Dice',
+        description:
+          'Dice games are games that use or incorporate one or more dice as their sole or central component.',
+        hashtag: ['#reactjs', '#game', '#dice'],
+        linkGithub: 'https://github.com/ngocxxu/BC08E-TaiXiu-Bono',
+        linkDemo: 'https://taixiucovid.netlify.app/',
+      },
+      {
+        porfolioImage:
+          'https://res.cloudinary.com/ngocxxu/image/upload/v1678979109/CV/demomini3_yvnykf.png',
+        title: 'Rock, Paper, Scissors',
+        description:
+          'Between two people which each player randomly forms one of three shapes from their hand.',
+        hashtag: ['#reactjs', '#game', '#hand'],
+        linkGithub: 'https://github.com/ngocxxu/BC08E-OanTuTi-BaoNgoc',
+        linkDemo: 'https://oantuticovid.netlify.app/',
+      },
+    ],
+    design: [
+      {
+        porfolioImage:
+          'https://res.cloudinary.com/ngocxxu/image/upload/v1678979107/CV/demo4_hxflo9.png',
+        title: 'Carousel 1',
+        description:
+          'A small project is taken and inspired which based on my handmade product. I use Illustrator app to build it',
+        hashtag: ['#illustrator', '#paracord', '#strong'],
+        linkDemo:
+          'https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ',
+      },
+      {
+        porfolioImage:
+          'https://res.cloudinary.com/ngocxxu/image/upload/v1678979107/CV/demo5_ifah0s.png',
+        title: 'Carousel 2',
+        description:
+          'A small project is taken and inspired which based on my handmade product. I use Illustrator app to build it',
+        hashtag: ['#illustrator', '#paracord', '#strong'],
+        linkDemo:
+          'https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ',
+      },
+      {
+        porfolioImage:
+          'https://res.cloudinary.com/ngocxxu/image/upload/v1678979108/CV/demo6_bbppm4.png',
+        title: 'Themes',
+        description:
+          'A small project is taken and inspired which based on my handmade product. I use Figma app to build it',
+        hashtag: ['#illustrator', '#paracord', '#strong'],
+        linkDemo:
+          'https://www.figma.com/file/Gc6fEczJDy8ZoOw0z53zEE/Zupi-Paracord?node-id=0%3A1',
+      },
+      {
+        porfolioImage:
+          'https://res.cloudinary.com/ngocxxu/image/upload/v1678979108/CV/demo1_a3y96s.png',
+        title: 'Carousel 3',
+        description:
+          'A small project is taken and inspired which based on my handmade product. I use Illustrator app to build it',
+        hashtag: ['#illustrator', '#paracord', '#strong'],
+        linkDemo:
+          'https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ',
+      },
+      {
+        porfolioImage:
+          'https://res.cloudinary.com/ngocxxu/image/upload/v1678979107/CV/demo2_t3vklj.png',
+        title: 'Carousel 4',
+        description:
+          'A small project is taken and inspired which based on my handmade product. I use Illustrator app to build it',
+        hashtag: ['#illustrator', '#paracord', '#strong'],
+        linkDemo:
+          'https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ',
+      },
+      {
+        porfolioImage:
+          'https://res.cloudinary.com/ngocxxu/image/upload/v1678979107/CV/demo3_irelqr.jpg',
+        title: 'Logo',
+        description:
+          'A small project is taken and inspired which based on my handmade product. I use Illustrator app to build it',
+        hashtag: ['#illustrator', '#paracord', '#logo'],
+        linkDemo:
+          'https://drive.google.com/drive/folders/1Yfup9A77cBjFntYUZrC9RcLzVASHbasZ',
+      },
+    ],
+  },
 };

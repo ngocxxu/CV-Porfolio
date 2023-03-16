@@ -41,8 +41,10 @@ export default function Resume(props) {
                   <p className='text-gray-100 font-medium text-lg'>
                     {ex.position}
                   </p>
-                  {ex.description.map((item) => (
-                    <p className='text-gray-400 mb-0'>{item}</p>
+                  {ex.description.map((item, index) => (
+                    <p key={index} className='text-gray-400 mb-0'>
+                      {item}
+                    </p>
                   ))}
                 </div>
               </div>
@@ -66,8 +68,10 @@ export default function Resume(props) {
                   <p className='text-gray-100 font-medium text-lg'>
                     {ex.position}
                   </p>
-                  {ex.description.map((item) => (
-                    <p className='text-gray-400 mb-0'>{item}</p>
+                  {ex.description.map((item, index) => (
+                    <p key={index} className='text-gray-400 mb-0'>
+                      {item}
+                    </p>
                   ))}
                 </div>
               </div>
@@ -84,8 +88,11 @@ export default function Resume(props) {
               <span className='bg-gray-600 text-gray-100 px-2 py-1 rounded m-1'>
                 {obj.title}
               </span>
-              {obj.detail.map((item) => (
-                <span className='bg-yellow-600 text-gray-100 px-2 py-1 rounded m-1'>
+              {obj.detail.map((item, index) => (
+                <span
+                  key={index}
+                  className='bg-yellow-600 text-gray-100 px-2 py-1 rounded m-1'
+                >
                   {item}
                 </span>
               ))}
