@@ -220,7 +220,7 @@ export const Info = {
           'https://res.cloudinary.com/ngocxxu/image/upload/v1678981429/CV/realstate_knfgt8.png',
         title: 'Real Estate',
         description:
-          'Web is used to watch the booking information in all of the hotels in the world. I use rapidAPI to build it.',
+          'Web is a basic web with rental homes and for-sale properties, advanced property filtering.',
         hashtag: ['#nextjs', '#e-commerce', '#trendy'],
         linkGithub: 'https://github.com/ngocxxu/Modern-Real-Estate-Project',
         linkDemo: 'https://modern-real-estate-project.vercel.app/',
