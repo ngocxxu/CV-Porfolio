@@ -23,7 +23,7 @@ export default function Header() {
           <p className="text-gray-300 text-lg">Frontend Development</p>
           <div className="flex justify-center space-x-4 text-3xl">
             <div>
-              <a href="https://www.linkedin.com/in/ngoc-quach-17397620a/">
+              <a href="https://www.linkedin.com/in/ngoc-quach-17397620a">
                 <i className="fab fa-linkedin text-white hover:text-red-400"></i>{" "}
               </a>
             </div>
