@@ -1,11 +1,10 @@
-import dayjs from 'dayjs';
+import dayjs from "dayjs";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import MainPhoto from "../assets/img/avame.jpg";
 import "../assets/styles/Header.css";
 
 export default function Header() {
-
   return (
     <div className="flex flex-col justify-between bg-gray-600 transition duration-500 ease-in-out h-full ">
       <div className=" lg:pt-24 lg:mx-20">
@@ -20,7 +19,7 @@ export default function Header() {
           <p className="text-gray-100 text-4xl font-semibold mt-6 mb-0">
             Ngoc Quach
           </p>
-          <p className="text-gray-300 text-lg">Frontend Development</p>
+          <p className="text-gray-300 text-lg">Frontend Developer</p>
           <div className="flex justify-center space-x-4 text-3xl">
             <div>
               <a href="https://www.linkedin.com/in/ngoc-quach-17397620a">
