@@ -27,7 +27,7 @@ export default function Resume(props) {
         <div className="resume-left lg:w-3/5 mr-3">
           <div className="text-2xl font-semibold mt-10 ml-6 lg:ml-0">
             <span className="border-b-2 text-gray-100 border-yellow-400">
-              Experience
+              Experiences
             </span>
           </div>
           <div className="mt-7">
