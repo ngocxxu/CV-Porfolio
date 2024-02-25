@@ -204,7 +204,7 @@ export const Info = {
         hashtag: ["#reactjs", "#fullstack", "#vocabulary"],
         linkGithub: "https://github.com/ngocxxu/vocab-management-fe",
         linkGithub2: "https://github.com/ngocxxu/vocab-management-be",
-        linkDemo: "https://vocab-management.firebaseapp.com/",
+        linkDemo: "https://vocab-management.web.app/",
       },
       {
         porfolioImage:
