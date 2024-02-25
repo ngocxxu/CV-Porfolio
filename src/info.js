@@ -85,6 +85,12 @@ export const Info = {
     ],
     education: [
       {
+        time: "06/2023 - Present",
+        company: "University of Information Technology",
+        position: "Information Technology",
+        description: ["- 2nd Bachelor's Degree"],
+      },
+      {
         time: "06/2022 - 09/2022",
         company: "Informatics Center VNUHCM",
         position: "Backend Development",
